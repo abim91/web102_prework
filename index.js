@@ -217,3 +217,16 @@ firstGameContainer.append(first_item);
 var second_item = document.createElement("p");
 second_item.append(second.name);
 secondGameContainer.append(second_item);
+
+
+//customizations
+
+//allow users to scroll to games section through navigation
+let scrBtn = document.getElementById("scrlGames");
+scrBtn.addEventListener("click",()=>{
+    //.scrollIntoView();
+   
+    showAllGames();
+    document.getElementById("button-container").scrollIntoView();
+
+});
